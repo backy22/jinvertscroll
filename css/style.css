@@ -1,0 +1,192 @@
+/* default */
+body{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/* nav */
+.menu {
+  overflow: hidden;
+	width: 800px;
+	position: fixed;
+  z-index: 5;
+  left: 100px;
+  top: 10px;
+  background-color: gray;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  display: table;
+  border-radius: 5px;
+}
+
+.menu li{
+  list-style: none;
+  display: table-cell;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* download */
+.download {
+  z-index: 5;
+  position: fixed;
+  left: 950px;
+  top: 10px;
+  width: 130px;
+  background-color: purple;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.download a {
+  color: #fff;
+}
+
+/* scroll */
+.scroll {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.back{
+  z-index: 1;
+  height: 100%;
+  width: 40000px;
+}
+
+.back img {
+  width: 40000px;
+}
+
+.middle{
+  z-index: 2;
+  height: 110%;
+  width: 13000px;
+}
+
+.front{
+  z-index: 3;
+  width: 10000px;
+}
+
+/* slides */
+.slides {
+  z-index: 4;
+  height: 100%;
+  display: flex;
+}
+
+.titlepage, .examples, .introduction, .instruction, .useful, .function {
+  display: flex;
+}
+
+.example {
+  margin: auto;
+  height: 75%;
+  max-height: 500px;
+  width: 800px;
+  background-color: #fff;
+  margin-left: 100px;
+}
+
+.example h2, .example h3 {
+  padding: 20px;
+  margin: 0;
+}
+
+.example h2{
+  font-size: 2em;
+  padding-top: 50px;
+}
+
+.example h3 {
+  font-size: 1.5em;
+}
+
+.example table {
+  margin: auto;
+  width: 70%;
+  font-size: 1.2em;
+}
+
+table th{
+  padding: 10px;
+  font-size: 1.4em;
+}
+
+.slides img {
+  margin: auto;
+  height: 75%;
+  margin-left: 100px;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+
+/* animals */
+.bird {
+  position: absolute;
+  z-index: 3;
+}
+
+.bird img, .rabbit img, .bear img, .fox img, .owl img {
+  width: 150px;
+}
+
+.fox {
+  z-index: 5;
+  bottom: 40px;
+  animation: moving 2s infinite;
+}
+
+@keyframes moving{
+  0%{
+    transform: translate(0, 0px);
+  }
+  25%{
+    transform: translate(0, 30px);
+  }
+  25%{
+    transform: translate(0, 30px);
+  }
+  100%{
+    transform: translate(0, 0);
+  }
+}
+
+.bear {
+  z-index: 3;
+  position: fixed;
+  left: 250px;
+  bottom: 75px;
+}
+
+.owl {
+  z-index: 5;
+  position: fixed;
+  right: 100px;
+}
+
+.rabbit {
+  position: absolute;
+  z-index: 3;
+  left: 1000px;
+  bottom: -50px;
+}
